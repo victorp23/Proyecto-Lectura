@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memoria</title>
+    <script src="https://kit.fontawesome.com/712575d4a5.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="consulta.js"></script>
+    <script type="module" src="index.js"></script>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="titulo">
+        <h1>Memoria Cognitiva</h1>
+    </div>
+
+    <div class="contenido">
+        <div class="buscar">
+            <form id="todo-form">
+                <div id="user-info"></div>
+                <input type="text" id="todo-input" placeholder="Ingrese su correo" />
+                <div class="btn">
+                    <i class="fas fa-search icon"></i>
+                </div>
+            </form>
+        </div>
+        <div id="todos-container"></div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore-compat.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyD6qawPJICbX0FwQxwXqhJNc5N1FSLDQ4U",
+            authDomain: "prueba-fc130.firebaseapp.com",
+            databaseURL: "https://prueba-fc130-default-rtdb.firebaseio.com",
+            projectId: "prueba-fc130",
+            storageBucket: "prueba-fc130.appspot.com",
+            messagingSenderId: "251192746253",
+            appId: "1:251192746253:web:99b11c01fa560b80bd5044"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="/app.js" type="module"></script>
+</body>
+
+</html>
